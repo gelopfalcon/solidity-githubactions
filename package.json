@@ -1,9 +1,26 @@
 {
-    "name": "build-tutorial",
-    "version": "1.0.0",
+    "private": true,
+    "name": "test-ga",
+    "version": "1.0.1",
+    "description": "",
+    "type": "module",
     "scripts": {
-        "test": "hardhat test --network hardhat"
+        "test": "cd retos/eth/test && npm test"
     },
     "author": "",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "@nomicfoundation/hardhat-chai-matchers": "^1.0.4",
+        "@nomicfoundation/hardhat-network-helpers": "^1.0.6",
+        "@nomiclabs/hardhat-ethers": "^2.2.1",
+        "@openzeppelin/contracts": "^4.8.0",
+        "dotenv": "^16.0.3",
+        "github-download-directory": "^3.0.0",
+        "hardhat": "^2.12.2",
+        "lerna": "^5.5.4",
+        "simple-git": "3.14.1"
+    },
+    "overrides": {
+        "parse-url": "^8.1.0"
+    }
 }
